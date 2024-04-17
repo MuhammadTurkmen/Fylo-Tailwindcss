@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Simple Tailwind Starter</title>
   </head>
-  <body>
-    <h1 class="text-3xl bg-red-100">Tailwind simple starter</h1>
+  <body class="dark:bg-darkBlue dark:text-white font-opensans">
+    <!-- header -->
+    <header class="container mx-auto mt-10 px-6 text-center h-40 md:h-20">
+      <!-- Dynamic Logo -->
+      <div
+        class="bg-logo-light-mode dark:bg-logo-dark-mode bg-no-repeat h-20 w-48 mx-auto md:mx-0 md:absolute top-10 left-10"></div>
+
+      <!-- Menu -->
+      <div
+        class="flex items-center justify-center space-x-4 md:space-x-10 md:absolute top-12 right-10">
+        <a href="#features" class="hover:text-accentCyan">Features</a>
+        <a href="#testimonials" class="hover:text-accentCyan">Testimonials</a>
+      </div>
+    </header>
   </body>
 </html>
